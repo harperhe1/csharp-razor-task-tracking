@@ -27,7 +27,7 @@ namespace Tasker.Pages
         {
             if (!ModelState.IsValid)
             {
-                Page();
+                return Page();
             }
             _context.Tasks.Add(NewTask);
             _context.SaveChanges();
